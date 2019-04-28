@@ -14,5 +14,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 		id: 'mapbox.streets'
 }).addTo(map);
 
+var popupButton = document.createElement("BUTTON");
+
 var botanic = L.marker([-41.283,174.767]).addTo(map)
-    .bindPopup("<b>Saturday - 13/4/2019</b><br/>A trip to the Botanic Garden");
+    .bindPopup("<b>Saturday - 13/4/2019</b><br/>A trip to the Botanic Garden<br>"+popupButton);
